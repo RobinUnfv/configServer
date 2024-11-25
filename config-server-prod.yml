@@ -1,0 +1,4 @@
+config-server:
+    environment: Produccion
+mitocode:
+ password: '{cipher}cd999e965ecf1071baaaf544e2e7186572df50a3c70b5d978313cf6639905bb616ec3cc04e8a29379d6d162912d36222351f005660bcd3609b849d249ba79938'
