@@ -1,8 +1,10 @@
 server:
-  port: ${CUSTOM.SERVER.PORT:9030}
+  port: ${CUSTOM.SERVER.PORT:9010}
 
-# Mongo Configuration
-spring:
-  data:
-    mongodb:
-      uri: ${MONGODB.URL.CONNECTION:mongodb://mitocode:mitocode@localhost:27017/mitocode?authSource=admin}
+# Enable actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        base-path: /actuator
